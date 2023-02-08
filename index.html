@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* margin-top:0; */
+            margin:0;
+
+        }
+        
+        .email-block {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          border: 1px solid silver;
+          width: 340px;
+          border-radius: 3px;
+          padding: 4px;
+        }
+  
+        .input-box {
+          outline: none;
+          border: none;
+        }
+  
+        .email-block-name {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+        }
+        #showPassword{
+          font-size: 18px;
+
+        }
+        .right{
+          background-color: blue;
+          color:rgb(234, 234, 239);
+          border: none;
+          padding: 10px 22px;
+          font-size: 16px;
+          float: right;
+        }
+        #form_login {
+          left: 50%;
+          top: 50%;
+          margin-left: -25%;
+          position: absolute;<
+          margin-top: -25%;
+        }
+      </style>
+</head>
+<body>
+  <div style="border:1px solid black">
+  <form id="form_login">
+  <img height="100px" width="180px" src="goog.png">
+    <h2>Create Your Google Account<h2>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name"><br><br>
+    <!-- <input type="gmail" placeholder="Username"> -->
+    <div class="email-block">
+        <div class="email-block-input">
+          <input class="input-box" type="text" placeholder="Username" />
+        </div>
+        <div class="email-block-name">
+          <span style="font-size:15px;">@gmail.com</span>
+        </div>
+      </div>
+      <p style="font-size:12px;">you can use letters, numbers and full stop</p><br>
+    <p style="color:blue; font-size:18px;">use my current email Address instead</p><br>
+    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Confirm">
+    <p style="font-size:14px;">Use 8 or more characters with a mix of letters, numbers & symbols</p><br>
+    <input  id="showPassword" type="checkbox" ><small>Show password</small><br><br>
+    <p style="color:blue; font-size:15px;">sign in instead
+    <input  type="submit" value="Next" class="right">   
+  </form>
+</div>
+</body>
+</html>
